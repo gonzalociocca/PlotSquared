@@ -254,7 +254,7 @@ public class BukkitLocalQueue_1_9 extends BukkitLocalQueue<char[]> {
             Field tf = clazz.getDeclaredField("tileEntities");
             Field entitySlices = clazz.getDeclaredField("entitySlices");
             Object[] sections = (Object[]) sf.get(c);
-            HashMap<?, ?> tiles = (HashMap<?, ?>) tf.get(c);
+            Map<?, ?> tiles = (Map<?, ?>) tf.get(c);
             Collection<?>[] entities = (Collection<?>[]) entitySlices.get(c);
 
             Method xm = null;
